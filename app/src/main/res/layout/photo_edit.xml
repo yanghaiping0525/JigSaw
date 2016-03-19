@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_photo_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:visibility="invisible">
+
+    <ImageView
+        android:id="@+id/id_photo_taken"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <!--<com.yang.jigsaw.camera.view.RecycleHorizontalScrollView-->
+    <!--android:id="@+id/id_gallery"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="9"-->
+    <!--android:background="#ffffff"-->
+    <!--android:gravity="center">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/id_gallery_container"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--</LinearLayout>-->
+    <!--</com.yang.jigsaw.camera.view.RecycleHorizontalScrollView>-->
+
+    <RelativeLayout
+        android:id="@+id/id_edit_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:background="#cccccc"
+        android:clickable="false"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/id_edit_certain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:onClick="editFinish"
+            android:text="确定" />
+
+        <ImageButton
+            android:id="@+id/id_photo_effect"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/picture_editor"
+            android:padding="5dp" />
+
+        <Button
+            android:id="@+id/id_edit_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:onClick="cancelPicket"
+            android:text="取消" />
+    </RelativeLayout>
+</LinearLayout>

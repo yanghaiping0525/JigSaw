@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9f9fff"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="addPicture"
+        android:text="@string/add_picture_to_game"
+        android:textColor="#ffffff"
+        android:textSize="40dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="myPicture"
+        android:text="我的图片"
+        android:textColor="#ffffff"
+        android:textSize="40dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="myCamera"
+        android:text="我的相机"
+        android:textColor="#ffffff"
+        android:textSize="40dp" />
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/id_scroller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/id_line">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.yang.jigsaw.view.ImageCycleView
+                android:id="@+id/id_cycleView"
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+            <com.yang.jigsaw.view.NoScrollGridView
+                android:id="@+id/id_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@android:color/transparent"
+                android:horizontalSpacing="3dp"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="3"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="3dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/id_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/id_bottom"
+        android:background="#cccccc" />
+
+    <LinearLayout
+        android:id="@+id/id_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/id_back"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:scaleType="fitCenter"
+            android:background="@drawable/button_shape_finger"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:src="@mipmap/triangle_empty" />
+    </LinearLayout>
+</RelativeLayout>

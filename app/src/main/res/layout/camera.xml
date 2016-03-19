@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <com.yang.jigsaw.camera.view.CameraPreview
+        android:id="@+id/id_surface_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.yang.jigsaw.camera.view.FocusView
+        android:id="@+id/id_focusView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true" />
+
+    <com.yang.jigsaw.camera.view.ReferenceLine
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageButton
+        android:id="@+id/id_imageButton_capture"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_shape"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/take_photo_selector" />
+
+    <ImageButton
+        android:id="@+id/id_exit_camera"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/id_imageButton_capture"
+        android:layout_marginLeft="36dp"
+        android:background="@drawable/button_shape_exit"
+        android:padding="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/exit_camera" />
+
+    <include layout="@layout/photo_edit" />
+</RelativeLayout>

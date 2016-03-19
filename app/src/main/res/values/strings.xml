@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Jigsaw</string>
+    <string name="choice_certain">确定</string>
+    <string name="choice_pic">选择图片</string>
+    <string name="edit_pic">编辑图片</string>
+    <string name="edit_pic_menu">编辑图片</string>
+    <string name="begin_game">开始游戏</string>
+    <string name="add_picture_to_game">添加图片</string>
+    <string name="image_setting">设置</string>
+    <string name="go_back">返回</string>
+    <string name="exit_game">退出游戏</string>
+    <string name="my_photos">我的图片</string>
+    <string name="delete_photo">删除</string>
+    <string name="jigsaw">拼图</string>
+</resources>

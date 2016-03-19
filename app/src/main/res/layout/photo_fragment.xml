@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/id_radio_group_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/id_fragment_myPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_photo_pressed"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center_horizontal"
+            android:padding="20dp"
+            android:text="我的图片"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="#cccccc"></RelativeLayout>
+
+        <RadioButton
+            android:id="@+id/id_fragment_defaultPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_photo_pressed"
+            android:button="@null"
+            android:gravity="center_horizontal"
+            android:padding="20dp"
+            android:text="默认图片"
+            android:textSize="20sp"
+
+            />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:id="@+id/id_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/id_radio_group_photo"
+        android:background="#cccccc">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/id_fragment_photo_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_line"
+        android:orientation="vertical"></LinearLayout>
+</RelativeLayout>

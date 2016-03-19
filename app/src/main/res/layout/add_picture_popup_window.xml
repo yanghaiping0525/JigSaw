@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/id_popupWindow_select_photos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:background="@drawable/text_wrapper_shape"
+        android:textColor="#33ffff"
+        android:text="打开相册"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+    <Button
+        android:id="@+id/id_popupWindow_downLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:background="@drawable/text_wrapper_shape"
+        android:textColor="#33ffff"
+        android:text="网络下载"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/id_popupWindow_take_photos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/text_wrapper_shape"
+        android:textColor="#33ffff"
+        android:gravity="center"
+        android:text="相机"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/id_popupWindow_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/text_wrapper_shape"
+        android:textColor="#33ffff"
+        android:gravity="center"
+        android:text="取消"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

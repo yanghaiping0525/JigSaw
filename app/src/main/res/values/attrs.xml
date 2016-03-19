@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="MaxScaleTimes" format="integer">
+        <enum name="Max" value="10" />
+        <enum name="normal" value="4" />
+    </attr>
+    <attr name="DoubleClickScaleTimes" format="integer|float" />
+    <declare-styleable name="ZoomImage">
+        <attr name="MaxScaleTimes" />
+        <attr name="DoubleClickScaleTimes" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+</resources>

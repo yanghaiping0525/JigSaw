@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/alert_dialog_shape"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/id_alertDialog_title_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/id_alertDialog_title_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="3dp"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/id_alertDialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="标题"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/id_alertDialog_title_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="3dp"
+        android:background="#ff3333"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/id_alertDialog_picture"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="3dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/smile"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/id_alertDialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@drawable/alert_dialog_content_shape"
+        android:hint="50字以内"
+        android:maxLines="3"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:background="#ff3333" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/id_alertDialog_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_pressed"
+            android:clickable="true"
+            android:text="确定"
+            android:textColor="@color/alert_button_text"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/id_alertDialog_button_line_one"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#ff3333"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/id_alertDialog_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_pressed"
+            android:clickable="true"
+            android:text="拓展"
+            android:textColor="@color/alert_button_text"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/id_alertDialog_button_line_two"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#ff3333"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/id_alertDialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_pressed"
+            android:clickable="true"
+            android:text="取消"
+            android:textColor="@color/alert_button_text"
+            android:textSize="20sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:background="#ff3333" />
+
+</LinearLayout>

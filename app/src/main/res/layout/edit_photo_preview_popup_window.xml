@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/text_wrapper_shape"
+            android:gravity="center"
+            android:text="色相"
+            android:textColor="#33cccc" />
+
+        <SeekBar
+            android:id="@+id/id_sb_hue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/id_sb_hue_value"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/text_wrapper_shape"
+            android:gravity="center"
+            android:text="50"
+            android:textColor="#33cccc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/text_wrapper_shape"
+            android:gravity="center"
+            android:text="饱和度"
+            android:textColor="#33cccc" />
+
+        <SeekBar
+            android:id="@+id/id_sb_saturation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/id_sb_saturation_value"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/text_wrapper_shape"
+            android:gravity="center"
+            android:text="50"
+            android:textColor="#33cccc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/text_wrapper_shape"
+            android:gravity="center"
+            android:text="亮度"
+            android:textColor="#33cccc" />
+
+        <SeekBar
+            android:id="@+id/id_sb_lightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/id_sb_lightness_value"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/text_wrapper_shape"
+            android:gravity="center"
+            android:text="50"
+            android:textColor="#33cccc" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <FrameLayout
+            android:layout_width="10dp"
+            android:layout_height="330dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/id_effect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_wrapper_shape"
+                android:gravity="center"
+                android:text="特效"
+                android:textColor="#33cccc" />
+
+            <TextView
+                android:id="@+id/id_effect_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_wrapper_shape"
+                android:gravity="center"
+                android:text="无效果"
+                android:textColor="#33cccc"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/id_effect_black_and_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_wrapper_shape"
+                android:gravity="center"
+                android:text="黑白素描"
+                android:textColor="#33cccc"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/id_effect_comic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_wrapper_shape"
+                android:gravity="center"
+                android:text="漫画"
+                android:textColor="#33cccc"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/id_effect_color_sketch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_wrapper_shape"
+                android:gravity="center"
+                android:text="彩色素描"
+                android:textColor="#33cccc"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/id_effect_oil_paint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_wrapper_shape"
+                android:gravity="center"
+                android:text="油画"
+                android:textColor="#33cccc"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/id_effect_ice_effect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_wrapper_shape"
+                android:gravity="center"
+                android:text="冰冻"
+                android:textColor="#33cccc"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/id_effect_anti_color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_wrapper_shape"
+                android:gravity="center"
+                android:text="反色"
+                android:textColor="#33cccc"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/id_effect_old_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_wrapper_shape"
+                android:gravity="center"
+                android:text="老照片"
+                android:textColor="#33cccc"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/id_effect_fresco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_wrapper_shape"
+                android:gravity="center"
+                android:text="壁画"
+                android:textColor="#33cccc"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/id_effect_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_wrapper_shape"
+                android:gravity="center"
+                android:text="灰调"
+                android:textColor="#33cccc"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/id_sb_ok"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_wrapper_shape"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#33cccc" />
+
+        <TextView
+            android:id="@+id/id_sb_reset"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_wrapper_shape"
+            android:gravity="center"
+            android:text="重置"
+            android:textColor="#33cccc" />
+
+        <TextView
+            android:id="@+id/id_sb_cancel"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_wrapper_shape"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#33cccc" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:bottom="0dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp">
+        <selector xmlns:android="http://schemas.android.com/apk/res/android">
+            <item android:state_pressed="true">
+                <shape android:shape="rectangle">
+                    <!-- 实心 -->
+                    <solid android:color="#33cccc" />
+                    <!-- 渐变 -->
+                    <gradient
+                        android:angle="0"
+                        android:endColor="#99cccc"
+                        android:startColor="#99cccc" />
+                    <!-- 描边 -->
+                    <stroke
+                        android:width="0dp"
+                        android:color="#dcdcdc" />
+                    <corners
+                        android:bottomLeftRadius="24dp"
+                        android:bottomRightRadius="24dp"
+                        android:topLeftRadius="24dp"
+                        android:topRightRadius="24dp" />
+                    <size
+                        android:width="80dp"
+                        android:height="50dp" />
+                </shape>
+            </item>
+
+            <item>
+                <shape android:shape="rectangle">
+                    <!-- 实心 -->
+                    <solid android:color="#33cccc" />
+                    <!-- 渐变 -->
+                    <gradient
+                        android:angle="0"
+                        android:endColor="#ffffff"
+                        android:startColor="#ffffff" />
+                    <!-- 描边 -->
+                    <stroke
+                        android:width="0dp"
+                        android:color="#ffffff" />
+                    <corners
+                        android:bottomLeftRadius="24dp"
+                        android:bottomRightRadius="24dp"
+                        android:topLeftRadius="24dp"
+                        android:topRightRadius="24dp" />
+                    <size
+                        android:width="80dp"
+                        android:height="50dp" />
+                </shape>
+            </item>
+
+        </selector>
+    </item>
+</layer-list>

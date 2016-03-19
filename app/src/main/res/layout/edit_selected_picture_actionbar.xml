@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#33cccc"
+    android:padding="0dp">
+    <!--android:layout_height="wrap_content" 一定要为wrap_content-->
+    <ImageButton
+        android:id="@+id/id_actionbar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/back_icon"
+        android:background="@drawable/actionbar_button_shape_left"/>
+
+    <TextView
+        android:id="@+id/id_actionbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="图片编辑"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/id_actionbar_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:background="@drawable/actionbar_button_shape_right"
+        android:src="@mipmap/more"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

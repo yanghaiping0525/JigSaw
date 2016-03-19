@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:text="背景图片"
+        android:textColor="#cc555555"
+        android:textSize="24dp" />
+
+    <RadioGroup
+        android:id="@+id/id_radio_group_setting_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/id_radio_button_pic_default"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <RadioButton
+            android:id="@+id/id_radio_button_pic_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/picture_selector"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="只选择默认图片"
+            android:textColor="@color/radiobutton_text"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/id_radio_button_pic_my"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/picture_selector"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="只选择我的图片"
+            android:textColor="@color/radiobutton_text"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/id_radio_button_pic_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/picture_selector"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:text="选择所有图片"
+            android:textColor="@color/radiobutton_text"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:text="开始布局"
+        android:textColor="#cc555555"
+        android:textSize="24dp" />
+
+    <RadioGroup
+        android:id="@+id/id_radio_group_setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/id_radio_button_layout_3x3"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <RadioButton
+            android:id="@+id/id_radio_button_layout_2x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/game_layout_selector"
+            android:padding="10dp"
+            android:text=" 2 x 2 "
+            android:textColor="@color/radiobutton_text"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/id_radio_button_layout_3x3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/game_layout_selector"
+            android:padding="10dp"
+            android:text=" 3 x 3 "
+            android:textColor="@color/radiobutton_text"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/id_radio_button_layout_4x4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/game_layout_selector"
+            android:padding="10dp"
+            android:text=" 4 x 4 "
+            android:textColor="@color/radiobutton_text"
+            android:textSize="24dp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="游戏时间"
+        android:textColor="#cc555555"
+        android:textSize="24dp" />
+
+    <RadioGroup
+        android:id="@+id/id_radio_group_setting_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/id_radio_button_time_normal"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <RadioButton
+            android:id="@+id/id_radio_button_time_long"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/game_layout_selector"
+            android:padding="10dp"
+            android:text=" 多 "
+            android:textColor="@color/radiobutton_text"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/id_radio_button_time_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/game_layout_selector"
+            android:padding="10dp"
+            android:text=" 适中 "
+            android:textColor="@color/radiobutton_text"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/id_radio_button_time_short"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/game_layout_selector"
+            android:padding="10dp"
+            android:text=" 少 "
+            android:textColor="@color/radiobutton_text"
+            android:textSize="24dp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:text="关卡递进"
+        android:textColor="#cc555555"
+        android:textSize="24dp" />
+
+    <RadioGroup
+        android:id="@+id/id_radio_group_progressive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/id_radio_button_progressive_one"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp">
+
+        <RadioButton
+            android:id="@+id/id_radio_button_progressive_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/game_layout_selector"
+            android:padding="10dp"
+            android:text=" 一回合  "
+            android:textColor="@color/radiobutton_text"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/id_radio_button_progressive_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/game_layout_selector"
+            android:padding="10dp"
+            android:text=" 两回合 "
+            android:textColor="@color/radiobutton_text"
+            android:textSize="24dp" />
+
+        <RadioButton
+            android:id="@+id/id_radio_button_progressive_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/game_layout_selector"
+            android:padding="10dp"
+            android:text=" 三回合 "
+            android:textColor="@color/radiobutton_text"
+            android:textSize="24dp" />
+    </RadioGroup>
+</LinearLayout>

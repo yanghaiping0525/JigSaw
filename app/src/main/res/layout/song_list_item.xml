@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_song_item_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_song_letter_index"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#eeeeee"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:text="A"
+        android:textColor="#33cccc"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/music_item_selector"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="3dp">
+
+        <TextView
+            android:id="@+id/id_song_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:text="123"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/id_song_quality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/text_wrapper_song_high_quality"
+                android:text="高品质"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="#ffffffff" />
+
+            <TextView
+                android:id="@+id/id_song_singer"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:text="火影忍者"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textColor="#777777" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=" - " />
+            <!-- android:focusableInTouchMode="true" -->
+            <com.yang.jigsaw.view.MargueeText
+                android:id="@+id/id_song_album"
+                android:layout_width="wrap_content"
+                android:layout_height="18sp"
+                android:singleLine="true"
+                android:text="火影忍者"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:textColor="#777777" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

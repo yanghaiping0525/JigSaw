@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#33cccc"
+    android:padding="0dp">
+    <!--android:layout_height="wrap_content" 一定要为wrap_content-->
+    <ImageButton
+        android:id="@+id/id_actionbar_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/actionbar_button_shape_left"
+        android:src="@drawable/back_icon" />
+
+    <TextView
+        android:id="@+id/id_actionbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="选择图片"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5" />
+
+        <RelativeLayout
+            android:id="@+id/id_actionbar_editView"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="4"
+            android:visibility="invisible">
+
+            <ImageButton
+                android:id="@+id/id_actionbar_preview"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/actionbar_button_shape"
+                android:padding="5dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/preview_icon" />
+
+            <ImageButton
+                android:id="@+id/id_actionbar_delete"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/actionbar_button_shape"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/seletor_delete_icon" />
+
+            <ImageButton
+                android:id="@+id/id_actionbar_choice"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/actionbar_button_shape"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/choice_icon" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

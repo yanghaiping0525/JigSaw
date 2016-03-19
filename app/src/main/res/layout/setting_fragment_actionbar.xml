@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#33cccc"
+    android:padding="0dp">
+
+    <TextView
+        android:id="@+id/id_actionbar_music"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/actionbar_button_shape_left"
+        android:gravity="center"
+        android:text="歌曲"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/id_actionbar_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="设置"
+        android:textColor="#ffffff"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

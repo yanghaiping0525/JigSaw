@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <translate
+        android:duration="200"
+        android:fromXDelta="0"
+        android:fromYDelta="100%"
+        android:interpolator="@android:interpolator/bounce"
+        android:toXDelta="0"
+        android:toYDelta="0"
+        tools:targetApi="honeycomb" />
+</set>

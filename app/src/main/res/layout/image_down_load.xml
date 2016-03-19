@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/id_downLoad_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+        <!--style="?android:attr/progressBarStyleSmallTitle"-->
+        <ProgressBar
+            android:id="@+id/id_downLoad_progressBar"
+            style="@style/MyProgressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDuration="2000"
+            android:visibility="visible" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_downLoad_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_downLoad_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/id_downLoad_bottom_container"
+        android:background="#cccccc" />
+
+    <RelativeLayout
+        android:id="@+id/id_downLoad_bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/id_downLoad_back"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/button_shape_finger"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/triangle_empty" />
+
+        <ImageView
+            android:id="@+id/id_downLoad_downLoad"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button_shape_finger"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/down_load" />
+    </RelativeLayout>
+
+</RelativeLayout>

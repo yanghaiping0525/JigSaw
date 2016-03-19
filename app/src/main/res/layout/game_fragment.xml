@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/id_fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"></LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/id_line_game"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc" />
+
+    <RadioGroup
+        android:id="@+id/id_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:checkedButton="@+id/id_fragment_main"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/id_fragment_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_pressed"
+            android:button="@null"
+            android:drawableTop="@mipmap/o1"
+            android:gravity="center_horizontal"
+            android:text="游戏" />
+
+        <RelativeLayout
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="#cccccc"></RelativeLayout>
+
+        <RadioButton
+            android:id="@+id/id_fragment_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_pressed"
+            android:button="@null"
+            android:drawableTop="@mipmap/o2"
+            android:gravity="center_horizontal"
+            android:text="图库"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="#cccccc"></RelativeLayout>
+
+        <RadioButton
+            android:id="@+id/id_fragment_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_pressed"
+            android:button="@null"
+            android:drawableTop="@mipmap/o3"
+            android:gravity="center_horizontal"
+            android:text="设置"
+
+            />
+    </RadioGroup>
+
+</LinearLayout>
